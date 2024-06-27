@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Gears - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+        #gears {
+            padding: 20px;
+        }
+        .gear-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gear-item {
+            flex: 1 1 calc(33.333% - 20px); /* Three items per row with gap consideration */
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .gear-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gym Gears</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="timings.html">Timings</a>
+            <a href="offers.html">Offers</a>
+            <a href="nutrition.html">Nutrition & Supplements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="gears">
+        <h2>Our Gym Equipment</h2>
+        <div class="gear-container">
+            <div class="gear-item">
+                <img src="im/commercial-threadmill.webp" alt="Treadmill">
+                <h3>Treadmill</h3>
+                <p>High-quality treadmills for all your cardio needs.</p>
+            </div>
+            <div class="gear-item">
+                <img src="im/dumbell.jpg" alt="Dumbbells">
+                <h3>Dumbbells</h3>
+                <p>A wide range of dumbbells for strength training.</p>
+            </div>
+            <div class="gear-item">
+                <img src="im/817Q6NjXIlL._AC_UF894,1000_QL80_.jpg" alt="Smith Machine">
+                <h3>Smith Machine</h3>
+                <p>Versatile smith machines for various strength exercises.</p>
+            </div>
+            <div class="gear-item">
+                <img src="im/1sc085-2-jpg-webp.webp" alt="Leg Press">
+                <h3>Leg Press</h3>
+                <p>Leg press machines for lower body workouts.</p>
+            </div>
+            <div class="gear-item">
+                <img src="im/seated-cable-row-machine-500x500.webp" alt="Cable Machine">
+                <h3>Cable Machine</h3>
+                <p>Multi-functional cable machines for diverse exercises.</p>
+            </div>
+            <div class="gear-item">
+                <img src="im/633ace44f426053c615bbc60-lanos-exercise-bike-stationary-bike-for.jpg" alt="Exercise Bike">
+                <h3>Exercise Bike</h3>
+                <p>Stationary bikes for cardio and endurance training.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

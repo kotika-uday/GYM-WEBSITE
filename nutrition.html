@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition & Supplements - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+        /* Nutrition section */
+        #nutrition {
+            padding: 20px;
+        }
+        .nutrition {
+            display: flex;
+            gap: 20px; /* Space between items */
+            flex-wrap: wrap; /* Ensure items wrap if the container is too small */
+        }
+        .nutrition-item {
+            flex: 1 1 calc(50% - 20px); /* Two items per row with gap consideration */
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .nutrition-item img {
+            width: 500px; /* Fixed width */
+            height: 300px; /* Fixed height */
+            object-fit: cover; /* Ensure the image covers the entire area without stretching */
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nutrition & Supplements</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="timings.html">Timings</a>
+            <a href="offers.html">Offers</a>
+            <a href="gears.html">Gym Gears</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="nutrition">
+        <h2>Our Nutrition & Supplement Plans</h2>
+        <div class="nutrition">
+            <div class="nutrition-item">
+                <h3>Protein Shakes</h3>
+                <p>High-quality protein shakes to support muscle growth.</p>
+                <img src="im/Protein-shakes.jpg" alt="Protein Shakes">
+            </div>
+            <div class="nutrition-item">
+                <h3>Vitamins</h3>
+                <p>Essential vitamins to keep you healthy and active.</p>
+                <img src="im/download (2).jpeg" alt="Vitamins">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

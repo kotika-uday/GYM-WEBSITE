@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for automatic scrolling */
+        .scroll-container {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+        }
+        .scroll-container img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        /* Enhance registration form styles */
+        #registration-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        #registration-form label {
+            display: flex;
+            width: 30%;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px; /* Adjust label font size */
+        }
+        #registration-form input, #registration-form select {
+            width: 65%; /* Adjust input/select width */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            box-sizing: border-box;
+            font-size: 14px; /* Adjust input/select font size */
+        }
+        #registration-form .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        #registration-form select {
+            width: 68%; /* Adjust select width */
+        }
+        #registration-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #registration-form button:hover {
+            background-color: #218838;
+        }
+        /* Header styles */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        h1 {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="im/logo.png" alt="FitLife Gym Logo">
+        </div>
+        <h1>Welcome to FitLife Gym</h1>
+        <nav>
+            <a href="packages.html">Packages</a>
+            <a href="timings.html">Timings</a>
+            <a href="offers.html">Offers</a>
+            <a href="gears.html">Gym Gears</a>
+            <a href="nutrition.html">Nutrition & Supplements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section id="intro">
+        <h2>Your Journey to Fitness Begins Here</h2>
+        <p>Join us at FitLife Gym to achieve your fitness goals.</p>
+        <div class="scroll-container">
+            <img src="im/i1.avif" alt="FitLife Gym Intro">
+            <img src="im/i2.avif" alt="FitLife Gym Intro">
+            <img src="im/i3.avif" alt="FitLife Gym Intro">
+            <img src="im/i4.avif" alt="FitLife Gym Intro">
+            <img src="im/i1.avif" alt="FitLife Gym Intro">
+            <img src="im/i2.avif" alt="FitLife Gym Intro">
+            <img src="im/i3.avif" alt="FitLife Gym Intro">
+            <img src="im/i4.avif" alt="FitLife Gym Intro">
+        </div>
+    </section>
+    <section id="registration">
+        <h2>Registration Form</h2>
+        <form id="registration-form">
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="input-group">
+                <label for="package">Choose a package:</label>
+                <select id="package" name="package" required>
+                    <option value="basic">Basic</option>
+                    <option value="premium">Premium</option>
+                    <option value="vip">VIP</option>
+                </select>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for continuous scrolling
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollContainer = document.querySelector('.scroll-container');
+            const scrollStep = 1; // Adjust this value for scroll speed
+
+            function scrollImages() {
+                scrollContainer.scrollLeft += scrollStep;
+                if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+                    scrollContainer.scrollLeft = 0;
+                }
+            }
+
+            setInterval(scrollImages, 20); // Adjust this value for scroll smoothness
+        });
+    </script>
+</body>
+</html>

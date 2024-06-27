@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+        /* Blog section */
+        #blog {
+            padding: 20px;
+        }
+        .blog-post {
+            display: flex;
+            gap: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 20px;
+        }
+        .blog-post img {
+            width: 200px; /* Fixed width */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Ensure the image covers the entire area without stretching */
+            border-radius: 10px;
+        }
+        .blog-post-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-post-content h3 {
+            margin-top: 0;
+        }
+        .blog-post-content a {
+            margin-top: auto;
+            align-self: flex-end;
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .blog-post-content a:hover {
+            background-color: #000000;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="timings.html">Timings</a>
+            <a href="offers.html">Offers</a>
+            <a href="gears.html">Gym Gears</a>
+            <a href="nutrition.html">Nutrition & Supplements</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section id="blog">
+        <h2>Latest Articles</h2>
+        <div class="blog-post">
+            <img src="im/6-simple-fitness-tips-you-should-follow-daily-in-the-UAE.webp" alt="Workout Tips">
+            <div class="blog-post-content">
+                <h3>10 Tips for a Successful Workout</h3>
+                <p>Posted on January 10, 2024 by Admin</p>
+                <p>Stay motivated and achieve your fitness goals with these top tips...</p>
+                <a href="blog-post1.html">Read More</a>
+            </div>
+        </div>
+        <div class="blog-post">
+            <img src="im/620a868cfc23d1001804c8cb.webp" alt="Healthy Eating">
+            <div class="blog-post-content">
+                <h3>Healthy Eating for a Healthy Life</h3>
+                <p>Posted on January 5, 2024 by Admin</p>
+                <p>Discover the best nutrition tips to complement your workout...</p>
+                <a href="MediterraneanDiet.jpg">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 FitLife Gym. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
